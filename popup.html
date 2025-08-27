@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sent Messages</title>
+    <style>
+      body {
+        padding: 10px;
+        font-family: system-ui;
+        min-width: 350px;
+        max-width: 500px;
+        margin: 0;
+      }
+      #messages {
+        white-space: pre-wrap;
+        margin: 0;
+        max-height: 400px;
+        overflow-y: auto;
+      }
+      #messages div {
+        padding: 8px;
+        margin: 4px 0;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        background: #f9f9f9;
+        word-wrap: break-word;
+      }
+      #messages div:hover {
+        background: #f0f0f0;
+      }
+      h3 {
+        margin: 0 0 10px 0;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Your ChatGPT Messages</h3>
+    <div id="messages"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
